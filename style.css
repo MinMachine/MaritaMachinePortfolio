@@ -1,9 +1,18 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+/* 
+The * selector targets all elements on the page.
+This resets default padding, margin, and sets box-sizing for better control over layout. 
+*/
+* {
+    padding: 0; /* Removes any default padding around elements */
+    margin: 0; /* Removes any default margin around elements */
+    box-sizing: border-box; /* Includes padding and border in element's width/height, making layout easier to control */
 }
+
+body{
+
+    font-family: "Montserrat", serif;
+}
+
 .main-header{
     display: flex;
     width: 100%;
@@ -12,12 +21,7 @@
     align-items: center;
     justify-content:space-around;
 }
-.logo img{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+
 .logo{
     margin-right: 60%;
     
@@ -26,37 +30,84 @@
 .menu{ 
     
     margin-right: 10%;
+    height: auto;
+    width: auto;
 }
-.main{
-    height: 100vh;
-    width: 100%;
-    background-color: #d9b737;
+
+.logo img {
+    /* Styling for the logo image itself */
+    height: 80px; /* Sets a fixed height of 80 pixels */
+    width: 80px; /* Sets a fixed width of 80 pixels */
+    border-radius: 50%; /* Rounds the image to make it a circle */
+    object-fit: cover; /* Makes the image fill the container without stretching it */
+}
+
+.main {
+    /* Main section styles */
+    height: 100vh; /* Makes the section full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    background: hwb(50 60% 38% / 0.507); /* Light yellow background color */
+}
+
+.about-intro {
+    /* Styles for the section holding the user's image and intro content */
+    position: relative; /* Allows precise control over positioning of child elements */
+    display: flex; /* Flexbox layout places items (image and text) side-by-side */
+    width: 70%; /* 60% of the main container width */
+    height: 87vh; /* 70% of the viewport height */
+    background: #f3f3f3; /* Light gray background for the intro section */
+    margin: auto; /* Centers the section horizontally within its container */
+    top: 10%; /* Moves the section slightly down from the top of its container */
+
+}
+
+.my-image {
+    /* Styling for the image container */
     position: relative;
+    width: 50%; /* Makes the image container take up half the 'about-intro' section */
 }
-.about-intro{
-    width: 60%;
-    height: 70vh;
-    background-color: #f3f3f3;
+
+.my-image img {
+    /* Styling for the image inside the image container */
+    position: absolute; /* Allows fine control of the image's position */
+    left: 6%; /* Moves the image slightly right within the container */
+    top: -8%; /* Moves the image up so it overlaps the border slightly */
+    width: 90%; /* Sets a specific width for the image */
+    height: 95%; /* Sets a specific height for the image */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+}
+
+.about-content {
+    /* Styles for the section that will contain user information */
+    width: 50%; /* Takes up the remaining half of 'about-intro' */
+    padding: 1em;
+}
+
+.about-content h1{
+
+    font-size: 3.2em;
+    font-weight: 500;
+    color: #333;
+
+
+}
+
+.about-content p{
+
+    font-size: 1.2em;
     margin-top: 5%;
-    position: absolute;
-    margin-left: 20%;
-    display: flex;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 7%;
 }
-.my-image{
+
+.about-content a{
+
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    border: 2px solid hwb(50 60% 38% / 0.507);
+    font-weight: 500;
+    padding: 1em;
     
-height: 100%;
-    width: 50%;
-}
-.about-content{
-    
-width: 50%;
-height: 100%;
-}
-.my-image img{
-    height: 400px;
-    width: 350px;
-position: absolute;
-left: 5%;
-top: -8%;
-object-fit: cover;
 }

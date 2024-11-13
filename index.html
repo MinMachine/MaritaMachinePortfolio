@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Declares the primary language of the page content as English -->
 
 <head>
+    <!-- The head section contains metadata (data about the page) and links to external resources like stylesheets and fonts -->
+
+    <!-- Sets the character encoding to UTF-8, which includes most languages' characters and symbols, making the page display correctly for diverse languages -->
     <meta charset="UTF-8">
+
+    <!-- Ensures the webpage scales well on different devices, especially on mobile. width=device-width makes the width match the screen size, and initial-scale=1.0 means no zoom by default -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+
+    <!-- Links to the main CSS file where most of the page's styling is stored -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Links to Font Awesome CSS files. These files provide access to icons (small images often used for buttons, navigation, etc.) like social media logos or a menu icon -->
     <link href="/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
     <link href="/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
     <link href="/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Sets the text shown in the browser tab as "Home" -->
+    <title>Home</title>
 </head>
 
-<body>
+<body> <!-- All visible content on the webpage goes within the body section -->
+
+    <!-- The header section usually contains site-wide navigation links or logos. This is the top part of the page -->
     <header class="main-header">
-        <!--logo section-->
-        <section class="logo">
 
-            <img src="portfoliophotos/photo11.jpg" alt="" />
-
+        <!-- Logo Section -->
+        <section class="logo"> <!-- This section is for displaying a logo image on the left side of the header -->
+            <img src="portfoliophotos/photo11.jpg" alt="Logo" /> <!-- Loads the logo image. alt="Logo" provides text in case the image doesn't load, which is also good for accessibility -->
         </section>
-        <!--menu section-->
+
+        <!-- Menu Icon Section -->
         <section class="menu">
 
             <i class="fa-solid fa-bars"></i>
@@ -28,16 +43,31 @@
         </section>
 
     </header>
-    <section class="main">
-        <section class="about-intro">
-            <section class="my-image">
-<img src="portfoliophotos/photo8.jpg" alt="">
+
+    <!-- Main Section -->
+    <section class="main"> <!-- Main content area where the primary content is displayed -->
+
+        <!-- Introduction Section (About) -->
+        <section class="about-intro"> <!-- Holds both the user's image and some introductory content about the user -->
+
+            <!-- User Image Section -->
+            <section class="my-image"> <!-- Divides space for a profile or portrait image -->
+                <img src="portfoliophotos/photo8.jpg" alt="User Portrait" /> <!-- Displays the user's portrait with an alt description for accessibility -->
             </section>
+
+            <!-- Content Section for About Me -->
             <section class="about-content">
+                <!-- This is where text about the user (e.g., an "About Me" paragraph) would go -->
+                 <h1> Hello, I'm Marita Machine — Aspiring AI & Web Developer </h1>
+
+                 <p>I'm a student at Pioneer School, where we’ve just launched a one-of-a-kind software engineering program. I’m diving into AI, web development, and Python, taking on projects that push my skills further every day. Check out more of my journey!</p>
+
+                 <a href="#">About Me</a>
 
             </section>
+
         </section>
     </section>
-</body>
 
+</body>
 </html>
